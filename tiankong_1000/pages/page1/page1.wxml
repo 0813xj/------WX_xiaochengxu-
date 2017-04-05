@@ -1,0 +1,59 @@
+
+<!--logs.wxml-->
+<view class="timuview" style="background:{{day_background}};">
+
+  <!--view style="font-size:15px; text-align:center;">
+    <text >Time Cost: {{displayTime}}</text>
+    <text>\n</text>
+  </view-->
+  <view style="background:{{day_background}};width:95%;margin-left:2.5%">
+    <text style="color:{{day_text}}; " selectable="true"> {{timu}}</text>
+    <text>\n</text>
+    <text>\n</text>
+  </view>
+  <view style="font-size: 10px;">
+    <view style="column-count:3;column-gap:0px;column-rule:0px;padding:0 5px 0 0">
+      <button data-click="{{bua}}" data-bu="a" class="button-xuanxiang" style="color:{{bua_text_c}};background-color: {{bua_back_c}};border:1px solid {{day_button1}};" bindtap="click">
+        <text selectable="true">{{items.A}} </text>
+      </button>
+      <button data-click="{{bua}}" data-bu="b" class="button-xuanxiang" style="color:{{bub_text_c}};background-color: {{bub_back_c}};border:1px solid {{day_button1}};" bindtap="click">
+        <text selectable="true">{{items.B}} </text>
+      </button>
+      <button data-click="{{buc}}" data-bu="c" class="button-xuanxiang" style="color:{{buc_text_c}};background-color: {{buc_back_c}};border:1px solid {{day_button1}};" bindtap="click">
+        <text selectable="true"> {{items.C}} </text>
+      </button>
+      <button data-click="{{bud}}" data-bu="d" class="button-xuanxiang" style="color:{{bud_text_c}};background-color: {{bud_back_c}};border:1px solid {{day_button1}};" bindtap="click">
+        <text selectable="true"> {{items.D}} </text>
+      </button>
+      <button data-click="{{bue}}" data-bu="e" class="button-xuanxiang" style="color:{{bue_text_c}};background-color: {{bue_back_c}};border:1px solid {{day_button1}};" bindtap="click">
+        <text selectable="true"> {{items.E}} </text>
+      </button>
+      <button data-click="{{buf}}" data-bu="f" class="button-xuanxiang" style="color:{{buf_text_c}};background-color: {{buf_back_c}};border:1px solid {{day_button1}};" bindtap="click">
+        <text selectable="true"> {{items.F}} </text>
+      </button>
+      <button data-click="{{bug}}" data-bu="g" class="button-xuanxiang" style="color:{{bug_text_c}};background-color: {{bug_back_c}};border:1px solid {{day_button1}};" bindtap="click">
+        <text selectable="true">{{items.G}} </text>
+      </button>
+      <button data-click="{{buh}}" data-bu="h" class="button-xuanxiang" style="color:{{buh_text_c}};background-color: {{buh_back_c}};border:1px solid {{day_button1}};" bindtap="click">
+        <text selectable="true"> {{items.H}} </text>
+      </button>
+      <button data-click="{{bui}}" data-bu="i" class="button-xuanxiang" style="color:{{bui_text_c}};background-color: {{bui_back_c}};border:1px solid {{day_button1}};" bindtap="click">
+        <text selectable="true"> {{items.I}} </text>
+      </button>
+    </view>
+  </view>
+  <view style="background:{{day_background}};">
+    <text style="color:{{day_text}};" selectable="true">{{jiexi_tmp}}</text>
+    <text>\n</text>
+    <text>\n</text>
+  </view>
+  <view style="column-count:2;column-gap:30px;background:{{day_background}};">
+    <button type="primary" size="default" data-jiexi="{{jiexi}}" bindtap="showanswer" disabled="{{disabled1}}" style="margin-left:20px; background-color:{{day_button1}};"> {{displayTime}} </button>
+    <button type="warn" size="default" data-order="{{order}}" bindtap="nextone" disabled="{{disabled}}" style="margin-right:20px;background-color:{{day_button2}};">next!!</button>
+    <text>\n</text>
+    <text>\n</text>
+  </view>
+  <view style="background:{{day_background}};">
+    <switch style="margin-left:250px " bindchange="switch1Change" />
+  </view>
+</view>

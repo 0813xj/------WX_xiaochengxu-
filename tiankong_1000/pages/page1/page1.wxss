@@ -1,0 +1,27 @@
+/* pages/page1/page1.wxss */
+
+
+page{
+	height:100%
+}
+
+
+.timuview{
+   font-size: 13px;
+   height: 100%;
+}
+
+
+.button-xuanxiang{
+	margin: 0px  0px 5px  5px;
+	text-align:center;
+	padding:8px 0 0 0;
+	font-size:13px;
+	font:bold;
+	word-break:break-all;
+	height:50px;
+	vertical-align: middle;
+	line-height:15px;
+	
+}
+

@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "爹，您来啦!",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#2d2d2d",
+    "backgroundColor": "#2d2d2d",
+    "enablePullDownRefresh": "true"
+}

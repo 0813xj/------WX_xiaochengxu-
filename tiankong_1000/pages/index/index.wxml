@@ -1,0 +1,37 @@
+
+<!--index.wxml-->
+<view class="container" style="background:#2d2d2d;">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <view class="section" style="text-align:center">
+    <text class="userinfo-nickname">{{greeting}}，爹!\n</text>
+    <text> \n</text>
+
+    <!-- {{userInfo.nickName}}>
+    <text class="userinfo-nickname">爹, 今天您想做几个?\n</text-->
+    <text class="userinfo-nickname"> ---------------------------\n</text>
+    <text class="userinfo-nickname"> 题库数量为：{{tikushuliang}}\n</text>
+    <text class="userinfo-nickname"> 占用空间为: {{zhanyongkongjian}}%\n</text>
+    <text class="userinfo-nickname"> 今天您想做几个?\n</text>
+    <text class="userinfo-nickname">{{quant}}个\n</text>
+    <text> \n</text>
+  </view>
+  <view class="section" >
+    <input class="inputbox" type="number" bindinput="readvalue" placeholder="1-{{tikushuliang}}" style="background:#ffffff; border-radius:5px 0 0 5px; width:140px;margin-left:10px;height: 46px; z-index:12;text-align:center" />
+    <button type="primary" plain="{{plain}}" data-quant="{{quant}}" bindtap="Start" style="margin-top:-46px;width:80px;margin-left:150px;z-index:11;border-radius: 0 5px 5px 0 ;height:46px;border:0px"> Start! </button>
+  </view>
+  <!--view class="section" style="text-align:center">
+    <text> \n</text>
+    <text class="userinfo-nickname"> ---------------------------\n</text>
+    <text class="userinfo-nickname"> 题库数量为：{{tikushuliang}}\n</text>
+    <text class="userinfo-nickname"> 占用空间为: {{zhanyongkongjian}}%</text>
+  </view-->
+  <view class="section" style="">
+    <text> \n</text>
+    <text> \n</text>
+    <text> \n</text>
+    <text> \n</text>
+    <text> \n</text>
+    <button type="warn" bindtap="huancunlist" loading="{{loading_2}}" disabled="{{disabled}}"> 缓存缓存题目 </button>
+    <progress class="con-pro" percent="{{progress_percent}}" color="#09bb07" stroke-width="15" backgroundColor="#2d2d2d" />
+  </view>
+</view>
