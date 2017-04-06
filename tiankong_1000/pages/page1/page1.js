@@ -13,6 +13,7 @@ Page({
     disabled: true,
     disabled1: false,
     time: 0,
+    nandu:"%%%XXS",
     displayTime: '00:00',
     day_background: "#e9ecec",
     day_text: "#000000",
@@ -82,17 +83,18 @@ Page({
           timu: res.data[0],
           xuanxiang: xuanxiang_list,
           jiexi: res.data[2],
-          items: xuanxiang_list
+          items: xuanxiang_list,
+          nandu: res.data[3]
         })
       }
     })
     var hgkm = (parseInt(current_number) + 1).toString()
+    var that = this
     wx.setNavigationBarTitle({
       title: "No." + hgkm
     })
     that.onStartHandler()
   },
-
   nextone: function (e) {
     var that = this
     that.setData({
@@ -114,7 +116,8 @@ Page({
           timu: res.data[0],
           xuanxiang: res.data[1],
           jiexi: res.data[2],
-          items: res.data[1]
+          items: res.data[1],
+          nandu: res.data[3]
         })
       }
     })
@@ -151,8 +154,9 @@ Page({
       bui_text_c: "#000000",
     })
     var ffd = (parseInt(current_key_num) + 1).toString()
-    console.log(ffd)
+    var that = this
 
+    console.log(that.data.nandu)
     wx.setNavigationBarTitle({
       title: "No." + ffd
     })

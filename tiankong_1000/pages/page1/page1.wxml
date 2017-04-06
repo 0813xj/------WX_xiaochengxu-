@@ -43,7 +43,7 @@
     </view>
   </view>
   <view style="background:{{day_background}};">
-    <text style="color:{{day_text}};" selectable="true">{{jiexi_tmp}}</text>
+    <text style="color:{{day_text}};" selectable="true">{{nandu}}\n{{jiexi_tmp}}</text>
     <text>\n</text>
     <text>\n</text>
   </view>
